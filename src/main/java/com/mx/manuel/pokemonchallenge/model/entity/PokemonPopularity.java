@@ -15,7 +15,8 @@ import lombok.Setter;
 @Table(name = "pokemon_popularity")
 public class PokemonPopularity implements Serializable {
 
-    @Id
+	private static final long serialVersionUID = 8209769120894348600L;
+	@Id
     private String name;
     private int count;
     private LocalDateTime lastModification;

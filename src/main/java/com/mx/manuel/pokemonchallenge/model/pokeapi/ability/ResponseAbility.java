@@ -15,7 +15,8 @@ import lombok.Setter;
 @Setter
 public class ResponseAbility  implements Serializable {
 
-    private Integer id;
+    private static final long serialVersionUID = -8605147023256540632L;
+	private Integer id;
     private String name;
     @JsonProperty("is_main_series")
     private boolean is_main_series;

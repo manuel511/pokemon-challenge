@@ -9,7 +9,8 @@ import lombok.Setter;
 @Setter
 public class VerboseEffect implements Serializable {
 
-    private String effect;
+    private static final long serialVersionUID = 690216648040761321L;
+	private String effect;
     private String short_effect;
     private NamedAPIResource language;
 }

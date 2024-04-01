@@ -9,6 +9,7 @@ import lombok.Setter;
 @Setter
 public class Name implements Serializable {
 
-    private String name;
+    private static final long serialVersionUID = -6978575857835677641L;
+	private String name;
     private NamedAPIResource language;
 }

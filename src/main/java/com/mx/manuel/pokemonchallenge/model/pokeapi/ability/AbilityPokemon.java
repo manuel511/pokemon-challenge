@@ -12,7 +12,8 @@ import lombok.Setter;
 @Setter
 public class AbilityPokemon implements Serializable {
 
-    @JsonProperty("is_hidden")
+    private static final long serialVersionUID = -7446907417632947190L;
+	@JsonProperty("is_hidden")
     private boolean is_hidden;
     private Integer slot;
     private NamedAPIResource pokemon;

@@ -17,7 +17,8 @@ import lombok.Setter;
 @Table(name = "bitacora_aop")
 public class Bitacora implements Serializable {
 
-    @Id
+	private static final long serialVersionUID = 8775605086516740759L;
+	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
     private String ip;

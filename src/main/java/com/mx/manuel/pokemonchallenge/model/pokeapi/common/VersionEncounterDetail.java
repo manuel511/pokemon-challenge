@@ -10,7 +10,8 @@ import lombok.Setter;
 @Setter
 public class VersionEncounterDetail implements Serializable {
 
-    private NamedAPIResource version;
+	private static final long serialVersionUID = -9217071614870419147L;
+	private NamedAPIResource version;
     private Integer max_chance;
     private List<Encounter> encounter_details;
 }

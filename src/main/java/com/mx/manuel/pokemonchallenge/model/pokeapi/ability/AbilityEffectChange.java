@@ -13,6 +13,7 @@ import lombok.Setter;
 @Setter
 public class AbilityEffectChange implements Serializable {
 
-    private List<Effect> effect_entries;
+    private static final long serialVersionUID = -6294697450907284086L;
+	private List<Effect> effect_entries;
     private NamedAPIResource version_group;
 }

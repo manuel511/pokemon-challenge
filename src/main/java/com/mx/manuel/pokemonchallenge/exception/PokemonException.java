@@ -8,7 +8,9 @@ import lombok.Getter;
 
 public class PokemonException extends RuntimeException {
 
-    @Getter
+	private static final long serialVersionUID = 4661924747779564873L;
+
+	@Getter
 	private final HttpStatusCode httpStatus;
     
     @Getter
