@@ -9,6 +9,7 @@ import lombok.Setter;
 @Setter
 public class NamedAPIResource implements Serializable {
     
-    private String name;
+    private static final long serialVersionUID = -2136105458144570942L;
+	private String name;
     private String url;
 }

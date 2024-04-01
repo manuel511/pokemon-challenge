@@ -9,6 +9,7 @@ import lombok.Setter;
 @Setter
 public class Effect implements Serializable {
 
-    private String effect;
+    private static final long serialVersionUID = -3316388097793328926L;
+	private String effect;
     private NamedAPIResource language;
 }

@@ -13,6 +13,7 @@ import lombok.Setter;
 @Setter
 public class ResponseLocationAreas implements Serializable {
 
-    private NamedAPIResource location_area;
+	private static final long serialVersionUID = 2683084050569983742L;
+	private NamedAPIResource location_area;
     private List<VersionEncounterDetail> version_details;
 }

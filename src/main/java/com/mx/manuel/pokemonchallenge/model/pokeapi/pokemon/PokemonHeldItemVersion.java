@@ -11,6 +11,7 @@ import lombok.Setter;
 @Setter
 public class PokemonHeldItemVersion implements Serializable {
 
-    private NamedAPIResource version;
+	private static final long serialVersionUID = -6289184866784124980L;
+	private NamedAPIResource version;
     private Integer rarity;
 }

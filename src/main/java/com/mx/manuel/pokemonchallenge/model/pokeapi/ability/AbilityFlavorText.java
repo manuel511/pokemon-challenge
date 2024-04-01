@@ -11,7 +11,8 @@ import lombok.Setter;
 @Setter
 public class AbilityFlavorText implements Serializable {
     
-    private String flavor_text;
+    private static final long serialVersionUID = 2416071282350878876L;
+	private String flavor_text;
     private NamedAPIResource language;
     private NamedAPIResource version_group;
 }
