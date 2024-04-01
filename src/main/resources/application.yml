@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: pokemon-challenge
+  datasource:
+    url: jdbc:postgresql://localhost:5432/local
+    username: <user>
+    password: <password>
+    hikari:
+      connection-timeout: 15000
+      maximum-pool-size: 25
+      pool-name: localConnPool
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    com.mx.manuel.pokemonchallenge: debug
+  pattern:
+    console: "%d{yy-MM-dd HH:mm:ss} [%.8thread] %-5level %logger{32} - %msg%n"
+
+pokeApi:
+  host: https://pokeapi.co
+  path:
+    ability: /api/v2/ability/
+    pokemon: /api/v2/pokemon/
+    locationAreas: /api/v2/pokemon/{id}/encounters

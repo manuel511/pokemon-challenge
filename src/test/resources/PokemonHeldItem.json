@@ -1,0 +1,15 @@
+{
+    "item": {
+    "name": "moon-stone",
+    "url": "https://pokeapi.co/api/v2/item/81/"
+    },
+    "version_details": [
+    {
+        "rarity": 5,
+        "version": {
+        "name": "ruby",
+        "url": "https://pokeapi.co/api/v2/version/7/"
+        }
+    }
+    ]
+}
